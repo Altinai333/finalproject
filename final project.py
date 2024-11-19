@@ -2,22 +2,24 @@ from storage import Library
 
 
 while True:
-  print("\n Welcome to the bookstore")
+  print("\n Welcome to the bookstore !")
 
-  person = input("\n A. See our catalog of books \n B. Add books \n C. Sell books \n D.Quit")
-
-  list = "Animal Farm by George Orwell", "The Handmaid's Tale by Margaret Atwood", "The Catcher in the Rye by J.D Salinger", "The Great Gatsby by Fitzgerald", "Things Fall Apart by Chinua Achebe"
+  person = input("\n A. See our catalog of books \n B. Add books \n C. Sell books \n D. See the price of our books \n E.Quit \n Enter the letter that corresponds to your choice: " " ")
 
   if person == "A":
-    print(list)
+    print("Here are the books we have:\n") 
+    Library.list(self)
 
-  if person == "B":
-    Library.add()
+  elif person == "B":
+    Library.add(self)
 
-  if person == "C":
-    Library.sell()
+  elif person == "C":
+    Library.sell(self)
 
-  if person == "Q":
+  elif person == "D":
+    Library.show(self)
+
+  elif person == "E":
     quit()
   
 
