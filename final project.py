@@ -1,5 +1,6 @@
 from storage import Library 
 
+data = Library()
 
 while True:
   print("\n Welcome to the bookstore !")
@@ -8,24 +9,18 @@ while True:
 
   if person == "A":
     print("Here are the books we have:\n") 
-    Library.list(self)
+    data.list()
 
   elif person == "B":
-    Library.add(self)
+    data.add()
 
   elif person == "C":
-    Library.sell(self)
+    data.sell()
 
   elif person == "D":
-    Library.show(self)
+    data.show()
 
   elif person == "E":
     quit()
   
-
-
-
-
-
-
 

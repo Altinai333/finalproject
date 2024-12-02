@@ -5,14 +5,14 @@ class Library():
        
 
     def add(self):
+       print("Add the book of your choice \n")
+       moretitle = input("Title:")
+       moreauthor = input("Author:")
+       moreprice = input("Price:")
+       print(moretitle)
+       print(moreauthor)
+       print(moreprice)
 
-      print("Add the book of your choice \n")
-      moretitle = input("Title:")
-      moreauthor = input("Author:")
-      moreprice = input("Price:")
-      print(moretitle)
-      print(moreauthor)
-      print(moreprice)
 
 
     def sell(self):
@@ -28,15 +28,15 @@ class Library():
        print(cost1)
 
     def list(self):
-       books = input ("\n The Handmaid's Tale by M.Atwood \n Animal Farm by G.Orwell \n The Catcher in the Rye by J.D Salinger \n The Great Gatsby by Fitzgerald \n Things Fall Apart by C.Achebe")
+       books = input("\n The Handmaid's Tale by M.Atwood \n Animal Farm by G.Orwell \n The Catcher in the Rye by J.D Salinger \n The Great Gatsby by Fitzgerald \n Things Fall Apart by C.Achebe")
        print(books)
+
+
+"have the option to save changes" 
+
 
     
        
      
     
     
-""" 
-    
-     
-    def books():  """
