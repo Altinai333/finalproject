@@ -12,6 +12,7 @@ class Library():
        self.moreprice = input("Price:")
        self.books[self.moretitle] = {"writer":self.moreauthor, "price": self.moreprice}
        print(self.books)
+       print(self.moreprice)
        print(self.moretitle, "by", self.moreauthor, "is now added to the bookstore")
 
        
@@ -32,7 +33,7 @@ class Library():
     def list(self):
        for a in self.books:
           print(a, self.books[a]["writer"])
-          print(["price"])
+          print(self.books[a]["price"])
 
 
 
