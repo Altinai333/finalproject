@@ -5,6 +5,7 @@ class Library():
        self.moretitle = ""
        self.moreauthor = ""
        
+       
     def add(self):
        print("Add the book of your choice \n")
        self.moretitle = input("Title:")
@@ -34,6 +35,25 @@ class Library():
        for a in self.books:
           print(a, self.books[a]["writer"])
           print(self.books[a]["price"])
+
+
+    def options(self):
+      print("choose the name of your book:")
+      print("choose the author:")
+      print("choose your price:")
+      file = input("name of your file\n")
+      print(self.moretitle)
+      print(self.moreauthor)
+      print(self.moreprice)
+      print(file)
+      with open('read.txt') as file:
+      file.writelines("% s\n" % data for data in self.books)
+
+       
+    
+    
+
+
 
 
 
