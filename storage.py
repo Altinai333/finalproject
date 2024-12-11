@@ -38,16 +38,12 @@ class Library():
 
 
     def options(self):
-      print("choose the name of your book:")
-      print("choose the author:")
-      print("choose your price:")
-      file = input("name of your file\n")
-      print(self.moretitle)
-      print(self.moreauthor)
-      print(self.moreprice)
-      print(file)
-      with open('read.txt') as file:
-      file.writelines("% s\n" % data for data in self.books)
+       myfile = open('myfile.txt', 'w')
+       myfile.write(self.books)
+       myfile.close()
+       myfile = open(self.books, 'r')
+       print(myfile)
+
 
        
     
