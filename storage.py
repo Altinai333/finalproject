@@ -39,15 +39,18 @@ class Library():
 
     def options(self):
        myfile = open('myfile.txt', 'w')
-       myfile.write(self.books)
+       self.books[self.moretitle] = {"\n writer":self.moreauthor, "\n price": self.moreprice}
+       for a in self.books:
+         myfile.write(a)
+         myfile.write(self.books[a]["\n writer"])
+         myfile.write(self.books[a]["\n price"])
        myfile.close()
-       myfile = open(self.books, 'r')
        print(myfile)
 
 
        
     
-    
+    ' myfile = open(self.books, 'r')'
 
 
 
